@@ -8,8 +8,18 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors());
+// Updated CORS configuration to explicitly allow your frontend URL
+const corsOptions = {
+  origin: [
+    'https://shreesairefrigeration.onrender.com', 
+    'http://localhost:3000'  // Keep localhost for development
+  ],
+  methods: ['GET', 'POST'],
+  credentials: true
+};
+
+// Replace the simple cors() with the corsOptions
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // MongoDB connection
