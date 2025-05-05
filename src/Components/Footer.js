@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="bg-light my-4" />
-        <p className="text-center small text-light">&copy; 2025 Your Company. All Rights Reserved.</p>
+        <p className="text-center small text-light">&copy; 2025 Shree Sai Refrigeration. All Rights Reserved.</p>
       </div>
     </footer>
   );
