@@ -87,7 +87,7 @@ const AboutContact = () => {
     
     try {
       // Send data to backend
-      const response = await axios.post('http://localhost:5000/api/service-requests', {
+      const response = await axios.post('https://service-center-react-app-b.onrender.com', {
         name,
         phone,
         address,
